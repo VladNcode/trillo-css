@@ -32,6 +32,58 @@ body
 
     .content
       nav.sidebar
-        | Navigation
+        ul.side-nav 
+          li.side-nav__item.side-nav__item--active
+            a.side-nav__link(href="#")
+              svg.side-nav__icon
+                use(xlink:href='img/sprite.svg#icon-home')
+              span Hotel
+
+          li.side-nav__item 
+            a.side-nav__link(href="#")
+              svg.side-nav__icon
+                use(xlink:href='img/sprite.svg#icon-aircraft-take-off')
+              span Flight
+          
+          li.side-nav__item 
+            a.side-nav__link(href="#")
+              svg.side-nav__icon
+                use(xlink:href='img/sprite.svg#icon-key')
+              span Car rentals
+          
+          li.side-nav__item 
+            a.side-nav__link(href="#")
+              svg.side-nav__icon
+                use(xlink:href='img/sprite.svg#icon-map')
+              span Tours
+        .legal &copy; 2021 by trillo. All rights reserved.
+
       main.hotel-view
-        | Hotel vieww
+        .gallery
+          figure.gallery__item
+            img.gallery__photo(src='img/hotel-1.jpg' alt='Photo of hotel 1')
+          figure.gallery__item
+            img.gallery__photo(src='img/hotel-2.jpg' alt='Photo of hotel 2')
+          figure.gallery__item
+            img.gallery__photo(src='img/hotel-3.jpg' alt='Photo of hotel 3')
+
+        .overview
+          h1.overview__heading Hotel Las Palmas
+          .overview__stars
+            svg.overview__icon-star
+                use(xlink:href='img/sprite.svg#icon-star')
+            svg.overview__icon-star
+                use(xlink:href='img/sprite.svg#icon-star')
+            svg.overview__icon-star
+                use(xlink:href='img/sprite.svg#icon-star')
+            svg.overview__icon-star
+                use(xlink:href='img/sprite.svg#icon-star')
+            svg.overview__icon-star
+                use(xlink:href='img/sprite.svg#icon-star')
+          .overview__location
+            svg.overview__icon-location
+                use(xlink:href='img/sprite.svg#icon-location-pin')
+            button.btn-inline Albufeira, Portugal
+          .overview__rating
+            .overview__rating-average 8.6
+            .overview__rating-count 429 votes
