@@ -109,5 +109,25 @@ body
                 img.recommend__photo(src='img/user-5.jpg' alt='Friend 3')
                 img.recommend__photo(src='img/user-6.jpg' alt='Friend 4')
 
-          .user-reviews User reviews
+          .user-reviews
+            figure.review
+              blockquote.review__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+              figcaption.review__user 
+                img.review__photo(src='img/user-1.jpg' alt='User 1')
+                .review__user-box
+                  p.review__user-name Nick Smith
+                  p.review__user-date Feb 23rd, 2021
+                .review__rating 7.8
+
+            figure.review
+              blockquote.review__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+              figcaption.review__user 
+                img.review__photo(src='img/user-2.jpg' alt='User 2')
+                .review__user-box
+                  p.review__user-name Mary Thomas
+                  p.review__user-date Sept 13th, 2021
+                .review__rating 9.3
+
+            button.btn-inline Show all 
+              span &rarr;
       
