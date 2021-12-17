@@ -17,6 +17,10 @@
   display: flex
   justify-content: space-between
   align-items: center
+  @media only screen and (max-width: $bp-smallest)
+    flex-wrap: wrap
+    height: 12rem
+    align-content: space-around
 
 .content
   display: flex
@@ -43,6 +47,8 @@
   font-size: 1.4rem
   @media only screen and (max-width: $bp-medium)
     padding: 2rem
+  @media only screen and (max-width: $bp-small)
+    flex-direction: column
 
 .description
   background-color: #fff
@@ -53,6 +59,9 @@
   @media only screen and (max-width: $bp-medium)
     padding: 2rem
     margin-right: 3rem
+  @media only screen and (max-width: $bp-small)
+    margin-right: 0
+    margin-bottom: 3rem
 
 .user-reviews
   flex: 1
